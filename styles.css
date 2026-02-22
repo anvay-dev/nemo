@@ -1,0 +1,71 @@
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #f6f7fb;
+}
+
+.card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.big {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.muted {
+  color: #666;
+  margin-top: 6px;
+}
+
+.progress-bar {
+  height: 14px;
+  background: #eee;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 12px 0 6px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3b82f6;
+  width: 0%;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 12px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.settings label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+}

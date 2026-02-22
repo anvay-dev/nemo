@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Water Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Water Tracker 💧</h1>
+
+      <section class="status">
+        <div class="big" id="remainingText">--%</div>
+        <div class="muted" id="connectionText">Not connected</div>
+      </section>
+
+      <section class="progress">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <div class="muted" id="progressText">0 / 0 oz</div>
+      </section>
+
+      <section class="controls">
+        <button id="toggleMockBtn">Use Mock: ON</button>
+        <button id="logDrinkBtn">Log Drink (+8 oz)</button>
+        <button id="resetDrinkBtn">Reset</button>
+      </section>
+
+      <section class="settings">
+        <h2>Settings</h2>
+        <label>
+          Daily goal (oz)
+          <input id="goalInput" type="number" min="1" value="64" />
+        </label>
+
+        <label>
+          RTDB root path
+          <input id="deviceUrlInput" type="text" value="waterbuddy" />
+        </label>
+
+        <button id="connectBtn">Connect</button>
+      </section>
+    </main>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
